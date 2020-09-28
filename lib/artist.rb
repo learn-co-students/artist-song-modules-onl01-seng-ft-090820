@@ -1,4 +1,4 @@
-require_relative 'config/environment.rb'
+
 
 class Artist
   extend Memorable
@@ -23,7 +23,7 @@ class Artist
 
   def add_song(song)
     @songs << song
-    song.artist = self unless self.artist
+    song.artist = self unless song.artist
   end
 
   def add_songs(songs)
